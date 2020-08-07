@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:layout_editor_absoluteX="0dp"
+    tools:layout_editor_absoluteY="0dp">
+
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="20dp"
+    android:paddingEnd="16dp"
+    android:paddingStart="16dp"
+    android:background="@drawable/background_music">
+
+    <include
+        android:id="@+id/header_music"
+        layout="@layout/header_music"/>
+
+    <TextView
+        android:id="@+id/text_next_play"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Next Play"
+        android:textAllCaps="true"
+        android:textColor="#fff"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintTop_toBottomOf="@id/header_music"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/text_next_play"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view"
+        app:layout_constraintStart_toStartOf="@id/view"
+        app:layout_constraintBottom_toBottomOf="@id/view"
+        app:layout_constraintTop_toTopOf="@id/view"
+        android:layout_marginStart="20dp"
+        android:text="1. Kanashimi wo yasasisa ni - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_1"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_1"
+        app:layout_constraintStart_toStartOf="@id/view_1"
+        app:layout_constraintBottom_toBottomOf="@id/view_1"
+        app:layout_constraintTop_toTopOf="@id/view_1"
+        android:layout_marginStart="20dp"
+        android:text="2. Blue Bird - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_2"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_1"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_2"
+        app:layout_constraintStart_toStartOf="@id/view_2"
+        app:layout_constraintBottom_toBottomOf="@id/view_2"
+        app:layout_constraintTop_toTopOf="@id/view_2"
+        android:layout_marginStart="20dp"
+        android:text="3. Closer - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_3"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_2"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_3"
+        app:layout_constraintStart_toStartOf="@id/view_3"
+        app:layout_constraintBottom_toBottomOf="@id/view_3"
+        app:layout_constraintTop_toTopOf="@id/view_3"
+        android:layout_marginStart="20dp"
+        android:text="4. flow-sign - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_4"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_3"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_4"
+        app:layout_constraintStart_toStartOf="@id/view_4"
+        app:layout_constraintBottom_toBottomOf="@id/view_4"
+        app:layout_constraintTop_toTopOf="@id/view_4"
+        android:layout_marginStart="20dp"
+        android:text="5. Wind - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_5"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_4"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_5"
+        app:layout_constraintStart_toStartOf="@id/view_5"
+        app:layout_constraintBottom_toBottomOf="@id/view_5"
+        app:layout_constraintTop_toTopOf="@id/view_5"
+        android:layout_marginStart="20dp"
+        android:text="6. Good Morning World - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_6"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_5"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_6"
+        app:layout_constraintStart_toStartOf="@id/view_6"
+        app:layout_constraintBottom_toBottomOf="@id/view_6"
+        app:layout_constraintTop_toTopOf="@id/view_6"
+        android:layout_marginStart="20dp"
+        android:text="7. Phoenix - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_7"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_6"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_7"
+        app:layout_constraintStart_toStartOf="@id/view_7"
+        app:layout_constraintBottom_toBottomOf="@id/view_7"
+        app:layout_constraintTop_toTopOf="@id/view_7"
+        android:layout_marginStart="20dp"
+        android:text="8. Omae Wa Mou - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_8"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_7"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_8"
+        app:layout_constraintStart_toStartOf="@id/view_8"
+        app:layout_constraintBottom_toBottomOf="@id/view_8"
+        app:layout_constraintTop_toTopOf="@id/view_8"
+        android:layout_marginStart="20dp"
+        android:text="9. Tiny Light - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_9"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_8"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_9"
+        app:layout_constraintStart_toStartOf="@id/view_9"
+        app:layout_constraintBottom_toBottomOf="@id/view_9"
+        app:layout_constraintTop_toTopOf="@id/view_9"
+        android:layout_marginStart="20dp"
+        android:text="10. Nandemonaiya - Raon Lee Cover"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_10"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_9"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_10"
+        app:layout_constraintStart_toStartOf="@id/view_10"
+        app:layout_constraintBottom_toBottomOf="@id/view_10"
+        app:layout_constraintTop_toTopOf="@id/view_10"
+        android:layout_marginStart="20dp"
+        android:text="11. Fujikawa - Kimi No Namae"
+        tools:ignore="MissingConstraints" />
+
+    <View
+        android:id="@+id/view_11"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        app:layout_constraintTop_toBottomOf="@id/view_10"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/shop"
+        android:paddingStart="20dp"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:fontFamily="@font/roboto_light"
+        app:layout_constraintEnd_toEndOf="@+id/view_11"
+        app:layout_constraintStart_toStartOf="@id/view_11"
+        app:layout_constraintBottom_toBottomOf="@id/view_11"
+        app:layout_constraintTop_toTopOf="@id/view_11"
+        android:layout_marginStart="20dp"
+        android:text="12. Motohiro Hata - Himawari no Yakusoiku"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

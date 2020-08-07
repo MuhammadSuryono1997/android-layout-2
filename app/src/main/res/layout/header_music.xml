@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="360dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:paddingTop="0dp"
+    android:paddingEnd="15dp"
+    android:paddingStart="15dp"
+    android:paddingBottom="0dp"
+    android:background="@drawable/music">
+
+    <ImageView
+        android:id="@+id/image_music"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/music_image"
+        android:scaleType="fitXY"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.448"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.16"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/title_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sillhoute - Raon Lee Cover"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        app:layout_constraintTop_toBottomOf="@id/image_music"
+        android:layout_marginTop="10dp"
+        tools:ignore="MissingConstraints" />
+
+    <ProgressBar
+        android:id="@+id/progress_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toStartOf="parent"
+        app:layout_constraintStart_toEndOf="parent"
+        android:progress="80"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp"
+        style="@style/Widget.AppCompat.ProgressBar.Horizontal"
+        app:layout_constraintTop_toBottomOf="@id/title_music"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/time_music"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="03:26"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        android:fontFamily="@font/roboto_light"
+        android:textAlignment="viewEnd"
+        android:textSize="10sp"
+        app:layout_constraintTop_toBottomOf="@id/progress_music"
+        android:layout_marginTop="0dp"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/music_button"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_play_circle_filled_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_music"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/music_button"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_skip_next_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/play"
+        app:layout_constraintTop_toBottomOf="@id/progress_music"
+        tools:ignore="MissingConstraints" />
+
+    <ImageButton
+        android:id="@+id/previous"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:background="@drawable/music_button"
+        android:foregroundGravity="center"
+        android:src="@drawable/ic_baseline_skip_previous_24"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/play"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/progress_music"
+        tools:ignore="MissingConstraints" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
